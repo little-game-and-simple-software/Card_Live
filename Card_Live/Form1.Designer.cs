@@ -1,4 +1,4 @@
-
+﻿
 namespace Card_Live
 {
     partial class Form1
@@ -63,7 +63,10 @@ namespace Card_Live
             this.button6 = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.Tsm1 = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -86,7 +89,7 @@ namespace Card_Live
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(5, 4);
+            this.groupBox1.Location = new System.Drawing.Point(5, 50);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1165, 97);
             this.groupBox1.TabIndex = 0;
@@ -249,7 +252,7 @@ namespace Card_Live
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 43);
+            this.label1.Location = new System.Drawing.Point(9, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 24);
             this.label1.TabIndex = 0;
@@ -258,7 +261,7 @@ namespace Card_Live
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.button1.Location = new System.Drawing.Point(560, 644);
+            this.button1.Location = new System.Drawing.Point(567, 690);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 34);
             this.button1.TabIndex = 16;
@@ -274,7 +277,7 @@ namespace Card_Live
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.button2.Location = new System.Drawing.Point(407, 644);
+            this.button2.Location = new System.Drawing.Point(414, 690);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(112, 34);
             this.button2.TabIndex = 17;
@@ -286,7 +289,7 @@ namespace Card_Live
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 24;
-            this.listBox1.Location = new System.Drawing.Point(5, 107);
+            this.listBox1.Location = new System.Drawing.Point(12, 153);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(1032, 532);
             this.listBox1.TabIndex = 18;
@@ -295,7 +298,7 @@ namespace Card_Live
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.button3.Location = new System.Drawing.Point(1051, 156);
+            this.button3.Location = new System.Drawing.Point(1058, 202);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(112, 34);
             this.button3.TabIndex = 19;
@@ -307,7 +310,7 @@ namespace Card_Live
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label19.Location = new System.Drawing.Point(1129, 193);
+            this.label19.Location = new System.Drawing.Point(1136, 239);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(24, 27);
             this.label19.TabIndex = 17;
@@ -317,7 +320,7 @@ namespace Card_Live
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label20.Location = new System.Drawing.Point(1066, 193);
+            this.label20.Location = new System.Drawing.Point(1073, 239);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(72, 27);
             this.label20.TabIndex = 16;
@@ -326,7 +329,7 @@ namespace Card_Live
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.button4.Location = new System.Drawing.Point(1051, 116);
+            this.button4.Location = new System.Drawing.Point(1058, 162);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(112, 34);
             this.button4.TabIndex = 20;
@@ -337,7 +340,7 @@ namespace Card_Live
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.button5.Location = new System.Drawing.Point(1051, 257);
+            this.button5.Location = new System.Drawing.Point(1058, 303);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(112, 34);
             this.button5.TabIndex = 24;
@@ -349,7 +352,7 @@ namespace Card_Live
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label21.Location = new System.Drawing.Point(1129, 334);
+            this.label21.Location = new System.Drawing.Point(1136, 380);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(24, 27);
             this.label21.TabIndex = 22;
@@ -358,7 +361,7 @@ namespace Card_Live
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.button6.Location = new System.Drawing.Point(1051, 297);
+            this.button6.Location = new System.Drawing.Point(1058, 343);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(112, 34);
             this.button6.TabIndex = 23;
@@ -370,7 +373,7 @@ namespace Card_Live
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label22.Location = new System.Drawing.Point(1066, 334);
+            this.label22.Location = new System.Drawing.Point(1073, 380);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(52, 27);
             this.label22.TabIndex = 21;
@@ -379,7 +382,7 @@ namespace Card_Live
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.Orange;
-            this.button7.Location = new System.Drawing.Point(1051, 385);
+            this.button7.Location = new System.Drawing.Point(1058, 431);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(112, 34);
             this.button7.TabIndex = 25;
@@ -387,11 +390,29 @@ namespace Card_Live
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Tsm1});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1175, 32);
+            this.menuStrip1.TabIndex = 26;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            // 
+            // Tsm1
+            // 
+            this.Tsm1.Name = "Tsm1";
+            this.Tsm1.Size = new System.Drawing.Size(134, 28);
+            this.Tsm1.Text = "回合插件配置";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1175, 690);
+            this.ClientSize = new System.Drawing.Size(1175, 729);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label21);
@@ -405,12 +426,16 @@ namespace Card_Live
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "抽卡生存";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -450,6 +475,8 @@ namespace Card_Live
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem Tsm1;
     }
 }
 

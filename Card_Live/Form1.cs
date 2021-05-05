@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 
@@ -30,6 +29,11 @@ namespace Card_Live
         private void Form1_Load(object sender, EventArgs e)
         {
             //初始化
+            #region 准备路径
+            StreamWriter sw = new StreamWriter("D:\\CLPATH.txt");
+            sw.Write(Application.StartupPath);
+            sw.Close();
+            #endregion
             #region 初始化
             this.button7.Visible = false;
             for (int i = 0; i < 6; i++)
@@ -45,6 +49,7 @@ namespace Card_Live
 
             }
             #endregion
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -159,6 +164,88 @@ namespace Card_Live
             sw.Flush();
             sw.Close();
             #endregion
+            #region 启用扩展包
+
+            #endregion
+            #region 扩展接口
+            #region 写
+            StreamWriter hw = new StreamWriter(Application.StartupPath + "API\\hungry.txt");
+            hw.Write(hungry);
+            hw.Close();
+            hw = new StreamWriter(Application.StartupPath + "API\\water.txt");
+            hw.Write(water);
+            hw.Close();
+            hw = new StreamWriter(Application.StartupPath + "API\\blood.txt");
+            hw.Write(blood);
+            hw.Close();
+            hw = new StreamWriter(Application.StartupPath + "API\\money.txt");
+            hw.Write(money);
+            hw.Close();
+            #endregion
+            #region 读
+            StreamReader rr = new StreamReader(Application.StartupPath + "API\\hungry.txt");
+            hungry = Convert.ToInt32(rr.ReadToEnd());
+            rr.Close();
+            rr = new StreamReader(Application.StartupPath + "API\\water.txt");
+            water = Convert.ToInt32(rr.ReadToEnd());
+            rr.Close();
+            rr = new StreamReader(Application.StartupPath + "API\\blood.txt");
+            blood = Convert.ToInt32(rr.ReadToEnd());
+            rr.Close();
+            rr = new StreamReader(Application.StartupPath + "API\\money.txt");
+            money = Convert.ToInt32(rr.ReadToEnd());
+            rr.Close();
+            #endregion
+            #region 写
+            StreamWriter hwa = new StreamWriter(Application.StartupPath + "API\\hungry.txt");
+            hwa.Write(hungry);
+            hwa.Close();
+            hw = new StreamWriter(Application.StartupPath + "API\\water.txt");
+            hw.Write(water);
+            hw.Close();
+            hw = new StreamWriter(Application.StartupPath + "API\\blood.txt");
+            hw.Write(blood);
+            hw.Close();
+            hw = new StreamWriter(Application.StartupPath + "API\\money.txt");
+            hw.Write(money);
+            hw.Close();
+            #endregion
+            #region 读
+            StreamReader rra = new StreamReader(Application.StartupPath + "API\\hungry.txt");
+            hungry = Convert.ToInt32(rra.ReadToEnd());
+            rra.Close();
+            rr = new StreamReader(Application.StartupPath + "API\\water.txt");
+            water = Convert.ToInt32(rr.ReadToEnd());
+            rr.Close();
+            rr = new StreamReader(Application.StartupPath + "API\\blood.txt");
+            blood = Convert.ToInt32(rr.ReadToEnd());
+            rr.Close();
+            rr = new StreamReader(Application.StartupPath + "API\\money.txt");
+            money = Convert.ToInt32(rr.ReadToEnd());
+            rr.Close();
+            #endregion
+            #region 提
+            StreamReader ilist = new StreamReader(Application.StartupPath + "API\\text.txt");
+            string information = ilist.ReadToEnd();
+            listBox1.Items.Add(information);
+            ilist.Close(); //关闭文件!!!
+            //清空
+            StreamWriter clear = new StreamWriter(Application.StartupPath + "API\\text.txt", false);
+            clear.Write("");
+            clear.Close();
+            #endregion
+            #endregion
+            #region 回合扩展包
+            for (int i = 1; i < 30; i++)
+            {
+                string our = Application.StartupPath + "EX\\" + i.ToString() + ".exe";
+                //MessageBox.Show(our);
+                if (File.Exists(our))
+                {
+                    System.Diagnostics.Process.Start(our);
+                }
+            }
+            #endregion
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -258,6 +345,12 @@ namespace Card_Live
         private void button7_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start(Application.StartupPath + "\\Farm.exe");
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            MessageBox.Show("还未完善！","Toy's World Studio",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            
         }
     }
 }
